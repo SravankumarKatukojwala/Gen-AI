@@ -21,7 +21,7 @@ A powerful multi-agent system built using [LangGraph](https://github.com/langcha
 ## Project Structure
 multi-agent-system/ ├── agents/ │ ├── chatbot_agent.py │ ├── web_search_agent.py │ ├── youtube_agent.py │ ├── wikipedia_agent.py │ └── router.py ├── main.py # LangGraph app setup ├── utils.py # Helper functions ├── requirements.txt └── README.md
 
-Example Query:-
+## Example Query
 User: Can you summarize this YouTube video? https://www.youtube.com/watch?v=dQw4w9WgXcQ
 Response: **Title**: Rick Astley - Never Gonna Give You Up  
 **Channel**: Rick Astley  
