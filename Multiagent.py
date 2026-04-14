@@ -120,10 +120,10 @@ def youtube_agent(state: AgentState) -> dict:
         "query": state.query,
         "source": "YouTube",
         "response": (
-            f"🎥 Title: {title}\n"
-            f"🔗 Link: {url}\n"
-            f"📄 Transcript: {transcript}\n"
-            f"📝 Summary: {summary}"
+            f" Title: {title}\n"
+            f" Link: {url}\n"
+            f" Transcript: {transcript}\n"
+            f" Summary: {summary}"
         ),
         "extra": url
     }
@@ -156,12 +156,12 @@ app = graph.compile()
 
 # Run interactively
 while True:
-    user_input = input("\n🧠 Ask me anything (type 'exit' to quit): ")
+    user_input = input("\n Ask me anything (type 'exit' to quit): ")
     if user_input.lower() == "exit":
         break
     result = app.invoke({"query": user_input})
-    print(f"\n🔎 Source: ",result['source'])
-    print(f"\n🧠 Answer:\n", result['response'])
+    print(f"\n Source: ",result['source'])
+    print(f"\n Answer:\n", result['response'])
     if result['extra']:
-      print(f"\n📎 Extra:\n", result['extra'])
+      print(f"\n Extra:\n", result['extra'])
 
